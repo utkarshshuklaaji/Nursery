@@ -1,54 +1,192 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav{
-            height: 40px;
-            width: 100%;
-            background-color: rgb(219, 221, 222);
-            display: flex;
-        }
-        nav img{
-            height: 20px;   
-            padding: 10px 10px;
-        }
-        nav a {
-            padding: 10px 10px;
-        }
-        nav ul{
-            display: flex;
-            gap: 20px;
-        }
-        nav ul li {
-            display: flex;
-            padding-bottom: 10px;
-            color: rgb(112, 17, 17);
-        }
-       .home img{
-        height: 300px;
-        width: 100%;
-       } 
-    </style>
+    <title>Urbreathe | Green Living</title>
+    <link rel="stylesheet" href="./Urbreathe.css">
+    
 </head>
+
 <body>
-    <nav>
-        
-        <img src="./Logo.png">
-        <a href="#">Urbreathe</a>
-        <ul>
-            <li>Home</li>
-            <li>Plants</li>
-            <li>Seeds</li>
-            <li>Gardening</li>
-            <li>About</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
-    <div class="home">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWoya0zxOh8G5A5RJHO86gK1d77Ho4_8TOXWrcoOvmLQ&s=10" alt="Garden">
-    </div>
+    <header class="topbar">
+        <div class="container nav">
+            <div class="brand">
+                <img src="./Logo.png" alt="Urbreathe logo" class="brand-logo">
+                <span>Urbreathe</span>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><input type="text" class="search" placeholder="Search" aria-label="Search"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <div class="hero-content">
+                        <span class="eyebrow">Fresh green living</span>
+                        <h1>Bring nature home.</h1>
+                        <p>Curated plants, elegant pots, and essentials to help your space bloom beautifully every day.</p>
+                        <div class="cta-row">
+                            <a class="button button-primary" href="#products">Shop now</a>
+                            <a class="button button-secondary" href="#categories">Explore categories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Shop by category</h2>
+                </div>
+
+                <div class="categories">
+                    <article class="category-card">
+                        <img src="./Image/p.jpg" alt="Plants">
+                        <p>Plants</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="./Image/pots.jpg" alt="Pots">
+                        <p>Pots</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="./Image/seeds.jpg" alt="Seeds">
+                        <p>Seeds</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="./Image/tools.jpg" alt="Gardening tools">
+                        <p>Tools</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="./Image/decor.jpg" alt="Home decor">
+                        <p>Decor</p>
+                    </article>
+                    <article class="category-card">
+                        <img src="./Image/plantation.jpg" alt="Plantation">
+                        <p>Plantation</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container featured">
+                <div class="feature-panel">
+                    <img src="./Image/close-up-assortment-elegant-house-plants.jpg" alt="Assorted indoor plants">
+                </div>
+
+                <div class="feature-panel feature-copy">
+                    <h2>Products for greener living</h2>
+                    <p>From air-purifying foliage to chic indoor planters, Urbreathe helps you create calm, healthy spaces with products that look as good as they feel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured picks</h2>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="./Image/close-up-hand-holding-house-plant.jpg" alt="Hand holding a house plant">
+                        <div class="product-body">
+                            <h3>Peace Lily</h3>
+                            <p>Low-maintenance indoor plant for fresh, vibrant spaces.</p>
+                            <div class="product-meta">
+                                <span class="price">$24</span>
+                                <span class="tag">Popular</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="./Image/professional-plant-nursery-worker-repotting-plant.jpg" alt="Worker repotting a plant">
+                        <div class="product-body">
+                            <h3>Nursery Pot Set</h3>
+                            <p>Organic ceramic pots designed for stylish home gardens.</p>
+                            <div class="product-meta">
+                                <span class="price">$32</span>
+                                <span class="tag">New</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="./Image/flower.jpg" alt="Flower arrangement">
+                        <div class="product-body">
+                            <h3>Bloom Starter Kit</h3>
+                            <p>Everything needed to start planting and growing at home.</p>
+                            <div class="product-meta">
+                                <span class="price">$18</span>
+                                <span class="tag">Best value</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-wrap">
+                <div class="contact-card contact-info">
+                    <span class="eyebrow eyebrow-dark">Contact us</span>
+                    <h2>Let’s grow together</h2>
+                    <p>Share your planting goals, gifting ideas, or bulk order questions and our team will reach out with the right solution.</p>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> utkarsh@urbreathe.com</li>
+                        <li><strong>Phone:</strong> +91 9555860</li>
+                        <li><strong>Address:</strong> 151/4 Shilakhana, Teliyarganj, Prayagraj, Uttar Pradesh</li>
+                    </ul>
+                </div>
+
+                <form class="contact-card contact-form" name="Urbreathe" netlify>
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Your name" name="Name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="your@email.com" name="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" placeholder="+91 98765 43210" name="Phone">
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" placeholder="Plant care / order / gift" name="Subject">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us how we can help..."    name="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="button button-primary">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
